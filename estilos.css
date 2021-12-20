@@ -1,0 +1,318 @@
+@charset "UTD-8";
+
+@font-face { /*importando fonte*/
+    font-family: 'cordel';
+    src: url('fontes/xilosa_.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px; /*zerando margens e paddins gerais*/
+}
+
+body {
+    background-color: white; /*mudar essa cor para se orientar ao testar as caixas/bordas*/
+    max-width: 1350px;
+    min-width: 300px;
+}
+
+header {
+    background-image: url("imagens/carcaça2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: fixed;
+    background-color: silver;
+    
+    height: 100vh;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 100px;
+}
+strong > a {
+    text-decoration: none; 
+    color: white;
+}
+strong > a:hover {
+    color: rgb(105, 105, 105);
+    text-decoration: underline;
+}
+header > h1{
+    font-family: 'cordel';
+    text-shadow: 3px 3px 10px black;
+    color: white;
+    font-size: 10vw; /*imagem se adapta ao tamanho da tela*/
+    margin-top: -30px;
+}
+header > p {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    
+    font-size: 2vw;
+}
+
+main {
+    background-color: white; /*mudar essa cor para se orientar ao testar as caixas/bordas*/
+    margin: 5px;
+
+    max-width: 1350px;
+    min-width: 300px;
+    position: relative;
+}
+main p {
+    font-family: sans-serif;
+    font-size: 38px;
+    font-style: italic;
+    line-height: 65px; /*espaçamento entre linhas*/
+    padding: 5vh; /*em relação a viewport - viewheight*/
+    width: 80vh;
+    height: 70vh;
+    /*font-size: clamp(2em, 1em + 3vw, 2.5em);*/
+   /* width: 600px; largura da caixa o p*/
+    /*padding: 60px 40px 50px 40px;*/
+    /*max-width: 600px;
+    min-width: 50px;*/
+}
+.content0 {
+    background-color: white;
+    padding: 30px 20px ;
+    margin-top: 2px;
+    height: 570px;    
+
+    max-width: 1350px;
+    min-width: 300px;
+}
+
+.content0 p {
+    background-color: white;
+    max-width: 100%;
+    padding-right: 20px;
+}
+
+.content1 {
+    background-color: rgba(10, 10, 10, 0.541);
+    padding: 10px 20px ;
+    margin-top: 55px;
+    
+    
+    max-width: 100%;
+    position: absolute;
+    left: 3%;    
+}
+ .content1 p {
+    line-height: 90px;
+    width: 100vh;
+    max-width: 100%;
+ }
+
+
+.content1a {
+    background-color: rgba(10, 10, 10, 0.541);
+    padding: 10px 20px ;
+    margin-top: 20px;    
+    
+    position: absolute;
+    left: 3%;    
+}
+
+.content1a p {
+    width: 100vh;
+    line-height: 90px;
+}
+
+.content2 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 2px;
+    height: 1100px; 
+
+    max-width: 100%;
+    min-width: 300px;
+}
+.content2 p {
+    background-color: white;
+    max-width: 100%;
+    padding-right: 20px;
+}
+
+.content3 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 2px;
+    height: 1100px; 
+
+    width: 97%;
+    max-height: 100%;
+    max-width: 1350px;
+    min-width: 300px;
+}
+
+.content3 p {
+    background-color: white;
+    max-width: 100%;
+    max-height: 100%;
+    padding-right: 20px;
+}
+
+#imagem1 {
+    height: 100vh;
+    background-image: url('imagens/Tom-Alves-casa.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.479);
+}
+
+#imagem2 {
+    height: 100vh;
+    background-image: url('imagens/bodes.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.582);
+}
+#cor {
+    color: white;
+}
+
+footer {
+    background-color: black;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*=========================================*/
+/*========== media query ==================*/
+/*=========================================*/
+@media (max-width: 782px) {
+
+
+    .content1, .content1a {
+        width: 590px;
+    }
+    
+    
+    
+    .content1 p {
+        width: 80%;
+        line-height: 60px;
+    }
+
+    .content1a p {
+        width: 80%;
+        line-height: 60px;
+    }
+
+
+}
+
+@media (max-width: 678px) {
+    header h1 {
+        line-height: 120px;
+    }
+
+    body {
+        /*mudar essa cor para se orientar ao testar as caixas/bordas*/
+        max-width: 100%;
+        min-width: 300px;
+        margin-left: -20px;
+        margin-right: -20px;
+        
+        
+    }
+
+    header {
+        margin-right: -20px;
+        
+    }
+
+    header > h1{
+        font-family: 'cordel';
+        text-shadow: 3px 3px 10px black;
+        color: white;
+        font-size: 18vw; /*imagem se adapta ao tamanho da tela*/
+        margin-top: -80px;
+        
+    }
+    header > p {
+        color: white;
+        text-shadow: 3px 3px 3px black;
+        
+        font-size: 2vw;
+    }
+    
+    main {
+        /*mudar essa cor para se orientar ao testar as caixas/bordas*/
+        margin: -2px -20px;
+        padding-right: 30px;
+        max-width: 1350px;
+        min-width: 300px;
+        position: relative;
+
+        
+    }
+
+    main p {
+        font-family: sans-serif;
+        font-size: 24px;
+        font-style: italic;
+        line-height: 65px; /*espaçamento entre linhas*/
+        padding: 5vh; /*em relação a viewport - viewheight*/
+        width: 80%;
+        height: 70vh;
+
+    }
+
+    footer {
+        margin-right: -20px;
+    }
+
+    .content0 p {
+        padding-top: 120px;
+    }
+
+    .content1, .content1a {
+        width: 380px;
+    }
+    .content1a p {
+        padding-bottom: 35px;
+        width: 90%;
+        line-height: 70px;
+    }
+    .content1 p {
+        width: 90%;
+        line-height: 70px;
+    }
+
+    .content2 {
+        margin-bottom: -200px;
+    }
+
+    .content2 p {
+        
+        padding-bottom: 0px;
+    }
+
+    .content3 {
+        width: 96.5vw;
+        
+    }
+    .content3 p {
+        
+        padding-bottom: -70px;
+    }
+    
+
+    
+}
