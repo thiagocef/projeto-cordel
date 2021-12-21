@@ -198,11 +198,14 @@ footer {
 @media (max-width: 782px) {
 
 
-    .content1, .content1a {
+    .content1{
         width: 590px;
     }
     
-    
+    .content1a {
+        width: 590px;
+        height: 550px;
+    }
     
     .content1 p {
         width: 80%;
